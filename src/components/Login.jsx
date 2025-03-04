@@ -23,7 +23,6 @@ export function Login() {
         if (!token) return;
 
         const decoded = jwtDecode(token);
-        console.log(decoded)
         const expiresIn = decoded.exp * 1000 - Date.now();
 
         setTimeout(() => {
