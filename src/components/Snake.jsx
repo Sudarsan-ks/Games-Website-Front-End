@@ -130,6 +130,9 @@ export function Snake() {
         </div>
         <div className="snakeBoard">{gridBoard()}</div>
       </div>
+      <div className="backRpsBtn">
+        <button onClick={() => navigate("/gamelobby")} ><b>Back</b></button>
+      </div>
     </div>
   );
 }
