@@ -1,0 +1,275 @@
+.ticTacToe {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1f1c2c, #928DAB);
+}
+
+.ticGameCard {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.ticPlayerName {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.ticRoomId {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.gameBoard {
+    width: 90%;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: auto;
+}
+
+.boardBox {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ticTacToe,
+.gameBoard {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+
+.boardBox:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+    border-color: #1dcfdf;
+}
+
+.boardBox:active {
+    transform: scale(0.95);
+}
+
+.currentPlayer {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #00eaff;
+    margin-top: 20px;
+}
+
+.winnerTic {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #00eaff;
+    margin-top: 20px;
+}
+
+.rps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #38384f);
+}
+
+.rpsGameCard {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+}
+
+.RpsPlayerName,
+.RpsRoomId {
+    color: #444;
+    font-size: 1.2rem;
+}
+
+.rpsWinner {
+    color: #444;
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+}
+
+.RpsRoomId span {
+    color: #ea9a11;
+}
+
+.rpsImages {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.rpsImages img {
+    width: 80px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.rpsImages img:hover {
+    transform: scale(1.1);
+}
+
+.rpsResult {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff5733;
+}
+
+.backRpsBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8rem;
+}
+
+.backRpsBtn button {
+    background-color: rgb(230, 217, 217);
+    color: rgb(9, 7, 7);
+}
+
+.snakeGame {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1f1c2c;
+    padding: 10px;
+}
+
+.snakeCard {
+    width: 98%;
+    max-width: 420px;
+    background-color: #928DAB;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.snakePlayer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.snakeScore {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.snakeBoard {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    width: 90vw;
+    height: 90vw;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: #ddd;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.cell {
+    background-color: #ddd;
+    width: 100%;
+    height: 100%;
+}
+
+.food {
+    background-color: red;
+}
+
+.snake {
+    background-color: green;
+}
+
+.snakeHead {
+    background-color: #1f1c2c;
+}
+
+@media (max-width: 600px) {
+    .boardBox {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .rpsGameCard {
+        padding: 15px;
+    }
+
+    .rpsImages img {
+        width: 60px;
+    }
+
+    .RpsPlayerName,
+    .RpsRoomId {
+        font-size: 1rem;
+    }
+
+    .rpsResult {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .boardBox {
+        width: 75px;
+        height: 75px;
+        font-size: 1.2rem;
+    }
+}

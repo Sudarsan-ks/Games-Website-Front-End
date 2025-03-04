@@ -1,0 +1,263 @@
+.gameLobby {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.gameLobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #282c34;
+    color: white;
+}
+
+.navBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 15px;
+    background: #444;
+    font-size: 18px;
+}
+
+.dashboard,
+.logout {
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.dashboard:hover,
+.logout:hover {
+    color: #ffcc00;
+}
+
+.lobby {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.lobby h2 {
+    cursor: pointer;
+    padding: 2rem;
+    margin: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.3s e;
+}
+
+.lobby h2:hover {
+    background: white;
+    color: black;
+}
+
+.joinRoom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    margin: 20px 0px;
+}
+
+.joinRoom h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.joinRoom input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 250px;
+    text-align: center;
+}
+
+.joinRoom button {
+    cursor: pointer;
+    padding: 10px 15px;
+    background: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.joinRoom button:hover {
+    background: #388e3c;
+    transform: scale(1.05);
+}
+
+.roomDetail {
+    margin-top: 15px;
+    padding: 15px;
+    background: #555;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.roomDetail h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.roomDetail button {
+    margin-top: 10px;
+    background: #ffcc00;
+    color: #333;
+    font-weight: bold;
+}
+
+.roomDetail button:hover {
+    background: #e6b800;
+}
+
+
+.AdminDash {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.makeAnAdmin {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.userdata {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.userdata:hover {
+    transform: scale(1.02);
+}
+
+.userdata p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.userdata span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.removebtn {
+    background: #ff4d4d;
+    color: white;
+}
+
+.removebtn:hover {
+    background: #d63030;
+}
+
+.makebtn {
+    background: #4CAF50;
+    color: white;
+}
+
+.makebtn:hover {
+    background: #388e3c;
+}
+
+.backBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8rem;
+}
+
+.backBtn button {
+    background-color: #333;
+    color: #ccc;
+}
+
+.roomPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #282c34;
+    color: white;
+    text-align: center;
+}
+
+.roomPage h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.roomPage p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.roomPage b {
+    color: #ffcc00;
+}
+
+.roomPage ul {
+    list-style: none;
+    padding: 0;
+}
+
+.roomPage li {
+    background: #444;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+}
+
+.roomPage p:last-of-type {
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 16px;
+    color: #bbb;
+}

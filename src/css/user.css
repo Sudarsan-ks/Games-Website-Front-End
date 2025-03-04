@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.register,
+.login,
+.reset,
+.forgot,
+.error,
+.unauthorize {
+    width: 100%;
+    height: 100vh;
+}
+
+.register {
+    background-image: url("../assets/register.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerBox {
+    width: 90%;
+    max-width: 400px;
+    background-image: url("../assets/registerBox.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(201, 196, 196, 0.974);
+}
+
+.registerTitle {
+    color: rgb(224, 211, 24);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.registerForm input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.registerButton {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.registerButton:hover {
+    background-color: #218838;
+}
+
+.registerForm,
+.loginForm,
+.resetForm {
+    position: relative;
+}
+
+.loginPassShow {
+    position: absolute;
+    left: 85%;
+    bottom: 55%;
+}
+
+.registerPassShow {
+    position: absolute;
+    left: 85%;
+    bottom: 31%;
+}
+
+.resetPassShow {
+    position: absolute;
+    left: 85%;
+    bottom: 39%;
+}
+
+.registerButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid white;
+    border-top: 3px solid #ffcc00;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.login {
+    background-image: url("../assets/login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBox,
+.forgotBox {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.loginTitle,
+.forgotTitle {
+    color: rgb(14, 13, 13);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.loginForm input {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(13, 13, 12);
+    outline: none;
+}
+
+.loginForm input::placeholder {
+    color: black;
+}
+
+.loginButton,
+.forgotButton {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.loginButton:hover,
+.forgotButton:hover {
+    background-color: lightgray;
+}
+
+.forgotPass a {
+    color: rgb(224, 228, 17);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.signUp a {
+    color: rgb(231, 48, 11);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.forgotPass a:hover,
+.signUp a:hover {
+    text-decoration: underline;
+}
+
+.forgot {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgotForm input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+.forgotForm input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.reset {
+    background-color: #FFC107;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resetBox {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.resetTitle {
+    color: #FFD700;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.resetForm input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+.resetForm input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.ResetPassButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ResetPassButton:hover {
+    background-color: #FFC107;
+}
+
+.resendOtp a,
+.signIN a {
+    display: block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.resendOtp a:hover,
+.signIN a:hover {
+    text-decoration: underline;
+}
+
+.error,
+.unauthorize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white
+}
+
+.error img,
+.unauthorize img {
+    width: 90%;
+    max-width: 800px;
+    object-fit: contain;
+}
